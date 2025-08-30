@@ -1,0 +1,31 @@
+*{box-sizing:border-box}html,body{margin:0;padding:0;font-family:'Poppins',system-ui,-apple-system,Segoe UI,Roboto,Arial,Helvetica,sans-serif;color:#111}
+:root{--bg:#ffffff;--ink:#111;--muted:#6b7280;--accent:#2563eb;--surface:#f5f7fb;--card:#ffffff;--border:#e5e7eb}
+body{background:var(--bg);line-height:1.6}
+.wrap{max-width:1000px;margin:0 auto;padding:0 20px}
+.nav{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.85);backdrop-filter:saturate(180%) blur(8px);border-bottom:1px solid var(--border)}
+.nav__inner{display:flex;align-items:center;justify-content:space-between;height:64px}
+.brand{font-weight:700;text-decoration:none;color:var(--ink);font-size:20px;letter-spacing:.5px}
+.nav nav a{margin-left:16px;text-decoration:none;color:var(--ink);font-weight:500}
+.nav .btn{margin-left:16px}
+.hero{padding:72px 0 32px}
+.hero__text h1{font-size:40px;line-height:1.2;margin:0 0 8px}
+.lead{font-size:18px;color:var(--muted);max-width:720px}
+.hero__cta{margin:20px 0 16px;display:flex;gap:12px;flex-wrap:wrap}
+.meta{list-style:none;padding:0;margin:8px 0 0;display:flex;gap:16px;color:var(--muted);font-size:14px}
+.accent{color:var(--accent)}
+.btn{display:inline-block;border:1px solid var(--accent);padding:10px 16px;border-radius:10px;text-decoration:none;color:#fff;background:var(--accent);font-weight:600}
+.btn--ghost{background:transparent;color:var(--accent)}
+.section{padding:48px 0}
+.section h2{font-size:28px;margin:0 0 6px}
+.muted{color:var(--muted);margin:0 0 16px}
+.drive-embed{border:1px solid var(--border);border-radius:12px;overflow:hidden;background:var(--surface)}
+.drive-embed iframe{width:100%;height:540px}
+.grid{display:grid;gap:16px}
+.notes{grid-template-columns:repeat(auto-fit,minmax(240px,1fr));margin-top:16px}
+.card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:16px}
+.about__cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
+.contact__grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+.contact__item{display:block;text-decoration:none;background:var(--surface);border:1px solid var(--border);padding:12px 14px;border-radius:10px;color:var(--ink)}
+.footer{border-top:1px solid var(--border);background:var(--surface)}
+.footer__inner{display:flex;align-items:center;justify-content:space-between;height:64px}
+@media (max-width:600px){.hero__text h1{font-size:32px}.drive-embed iframe{height:420px}}

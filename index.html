@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kartik Suri — Graphic Designer Portfolio</title>
+  <meta name="description" content="Portfolio of Kartik Suri, a Graphic Designer specializing in brand identities, presentations, and digital design." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="wrap nav__inner">
+      <a class="brand" href="#top">KS</a>
+      <nav>
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a class="btn" href="Kartik_Suri_CV.pdf" target="_blank" rel="noopener">Resume</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero wrap">
+      <div class="hero__text">
+        <h1>Hi, I’m <span class="accent">Kartik Suri</span></h1>
+        <p class="lead">Senior Graphic Designer crafting brand identities, pitch-winning decks, and digital experiences that look great and work beautifully.</p>
+        <div class="hero__cta">
+          <a class="btn" href="#work">See my work</a>
+          <a class="btn btn--ghost" href="#contact">Get in touch</a>
+        </div>
+        <ul class="meta">
+          <li>Delhi, India</li>
+          <li>Adobe CC · Figma · WordPress · HTML/CSS</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="work" class="section wrap">
+      <h2>Selected Work</h2>
+      <p class="muted">This gallery is powered by my Google Drive folder. I update the folder, and the site updates automatically.</p>
+      <div class="drive-embed">
+        <iframe src="https://drive.google.com/embeddedfolderview?id=1GL73TsAUxFkVrAUS-EQUmNAJCd155ooI#grid" frameborder="0"></iframe>
+      </div>
+
+      <div class="grid notes">
+        <article class="card">
+          <h3>How this works</h3>
+          <p>Drop JPG/PNG/PDF files into the linked Drive folder. Use short, clear filenames so viewers understand the piece at a glance.</p>
+        </article>
+        <article class="card">
+          <h3>Tip</h3>
+          <p>Keep 8–12 of your strongest pieces here. Add a simple caption on the image itself (client, project, role, outcome).</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="section wrap">
+      <h2>About</h2>
+      <div class="about__cols">
+        <p>I’m a Senior Graphic Designer with experience at JLL, Protiviti, and more—creating high-impact presentations, branded marketing assets, and web pages. I work across Adobe Photoshop, Illustrator, InDesign, and Figma, and I’m comfortable building lightweight web pages with HTML/CSS when needed.</p>
+        <p>I love design that is clear, scalable, and on-brand. When I’m not pushing pixels, you’ll find me sketching concepts, reading, or shooting hoops.</p>
+      </div>
+    </section>
+
+    <section id="contact" class="section wrap">
+      <h2>Contact</h2>
+      <div class="contact__grid">
+        <a class="contact__item" href="mailto:surikartik6@gmail.com">surikartik6@gmail.com</a>
+        <a class="contact__item" href="tel:+919910114495">+91 99101 14495</a>
+        <a class="contact__item" href="https://www.linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="contact__item" href="https://www.behance.net" target="_blank" rel="noopener">Behance</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <span>© <span id="year"></span> Kartik Suri</span>
+      <a href="#top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
